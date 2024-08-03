@@ -69,4 +69,4 @@
 [submodule "deps/log4cplus"]
 	path = deps/log4cplus
 	url = https://github.com/log4cplus/log4cplus.git
-  branch = master
+  branch = 2.0.x
