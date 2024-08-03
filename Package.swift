@@ -16,13 +16,48 @@ let package = Package(
       targets: ["OpenMoonRay"]
     ),
     .library(
+      name: "log4cplus",
+      targets: ["log4cplus"]
+    ),
+    .library(
+      name: "scene_rdl2",
+      targets: ["scene_rdl2"]
+    ),
+    .library(
       name: "moonray",
       targets: ["moonray"]
-    ),
+    )
   ],
   targets: [
     .target(
+      name: "log4cplus",
+      path: "deps/log4cplus",
+      sources: [
+        "src"
+      ],
+      cxxSettings: [
+        .define("_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH", .when(platforms: [.windows]))
+      ]
+    ),
+    .target(
+      name: "scene_rdl2",
+      dependencies: [
+        .target(name: "log4cplus")
+      ],
+      path: "moonray/scene_rdl2",
+      exclude: [
+        "cmd",
+        "tests"
+      ],
+      cxxSettings: [
+        .define("_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH", .when(platforms: [.windows]))
+      ]
+    ),
+    .target(
       name: "moonray",
+      dependencies: [
+        .target(name: "scene_rdl2")
+      ],
       path: "moonray/moonray",
       exclude: [
         "cmd",

@@ -70,3 +70,7 @@
 	path = moonray/render_profile_viewer
 	url = https://github.com/dreamworksanimation/render_profile_viewer.git
 	branch = main
+[submodule "deps/log4cplus"]
+	path = deps/log4cplus
+	url = https://github.com/log4cplus/log4cplus.git
+  branch = master
