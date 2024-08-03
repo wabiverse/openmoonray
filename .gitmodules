@@ -38,10 +38,6 @@
 	path = moonray/moonray_arras/mcrt_messages
 	url = https://github.com/dreamworksanimation/mcrt_messages.git
 	branch = main
-[submodule "moonray/moonray_gui"]
-	path = moonray/moonray_gui
-	url = https://github.com/dreamworksanimation/moonray_gui.git
-	branch = main
 [submodule "moonray/hydra/hdMoonray"]
 	path = moonray/hydra/hdMoonray
 	url = https://github.com/dreamworksanimation/hdMoonray.git
@@ -62,14 +58,14 @@
 	path = moonray/hydra/moonray_sdr_plugins
 	url = https://github.com/dreamworksanimation/moonray_sdr_plugins.git
 	branch = main
-[submodule "moonray/moonray_dcc_plugins"]
-	path = moonray/moonray_dcc_plugins
-	url = https://github.com/dreamworksanimation/moonray_dcc_plugins.git
-	branch = main
+[submodule "moonray/moonray_gui"]
+	path = moonray/moonray_gui
+	url = https://github.com/dreamworksanimation/moonray_gui.git
+  branch = main
 [submodule "moonray/render_profile_viewer"]
 	path = moonray/render_profile_viewer
 	url = https://github.com/dreamworksanimation/render_profile_viewer.git
-	branch = main
+  branch = main
 [submodule "deps/log4cplus"]
 	path = deps/log4cplus
 	url = https://github.com/log4cplus/log4cplus.git
