@@ -58,3 +58,11 @@ boot
 .src_project*
 .config.xml
 .metadata_src_project
+
+# Ignore Swift build output
+.build/
+.p4*
+.DS_Store
+.AppleDouble
+.vscode
+.swiftpm
